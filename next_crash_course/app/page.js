@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import Header from "@/components/header";
 import Link from "next/link";
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <p>
         <Link href="/about">About Us</Link>
       </p>
+      <Header />
     </main>
   );
 }
