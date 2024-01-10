@@ -1,14 +1,19 @@
-import styles from "./page.module.css";
-import Header from "@/components/header";
 import Link from "next/link";
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <p>This is next js</p>
+    <main>
+      <h1 style={{ color: "white", textAlign: "center" }}>
+        Time to get started!
+      </h1>
       <p>
-        <Link href="/about">About Us</Link>
+        <Link href="/meals">Meals</Link>
       </p>
-      <Header />
+      <p>
+        <Link href="/meals/share">Share Meal</Link>
+        <p>
+          <Link href="/community">Community</Link>
+        </p>
+      </p>
     </main>
   );
 }
